@@ -1,6 +1,5 @@
 package com.springboot.travelblog.travelblogapp.rest;
 
-import com.springboot.travelblog.travelblogapp.common.LocationTravelGuide;
 import com.springboot.travelblog.travelblogapp.common.TravelBlogEntry;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -14,6 +13,7 @@ public class TravelBlogEntryController {
 
     @Autowired
     public TravelBlogEntryController(@Qualifier("popularDestination") TravelBlogEntry travelBlogEntry) {
+        System.out.println("In constructor: " + getClass().getSimpleName());
         this.travelBlogEntry = travelBlogEntry;
     }
 

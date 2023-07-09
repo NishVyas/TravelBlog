@@ -5,6 +5,9 @@ import org.springframework.stereotype.Component;
 @Component
 public class TripPreparation implements TravelBlogEntry {
 
+    public TripPreparation() {
+        System.out.println("In constructor: " + getClass().getSimpleName());
+    }
 
     @Override
     public String getTravelBlogEntryType() {
