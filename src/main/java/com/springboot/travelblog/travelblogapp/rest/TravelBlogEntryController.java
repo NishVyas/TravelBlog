@@ -12,7 +12,7 @@ public class TravelBlogEntryController {
     private TravelBlogEntry travelBlogEntry;
 
     @Autowired
-    public TravelBlogEntryController(@Qualifier("popularDestination") TravelBlogEntry travelBlogEntry) {
+    public TravelBlogEntryController(@Qualifier("itinerary") TravelBlogEntry travelBlogEntry) {
         System.out.println("In constructor: " + getClass().getSimpleName());
         this.travelBlogEntry = travelBlogEntry;
     }
