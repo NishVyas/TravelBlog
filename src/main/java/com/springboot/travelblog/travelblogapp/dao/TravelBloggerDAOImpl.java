@@ -35,4 +35,11 @@ public class TravelBloggerDAOImpl implements TravelBloggerDAO {
 
         return travelBloggerQuery.getResultList();
     }
+
+    @Override
+    public List<TravelBlogger> findByLastName(String last_name) {
+        TypedQuery<TravelBlogger> travelBloggerQuery = entityManager.createQuery("FROM TravelBlogger WHERE last_name=:theData", TravelBlogger.class);
+        travelBloggerQuery.setParameter("theData", last_name);
+        return travelBloggerQuery.getResultList();
+    }
 }

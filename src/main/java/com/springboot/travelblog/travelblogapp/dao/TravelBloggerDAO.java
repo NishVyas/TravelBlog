@@ -12,4 +12,5 @@ public interface TravelBloggerDAO {
 
     List<TravelBlogger> findAll();
 
+    List<TravelBlogger> findByLastName(String last_name);
 }

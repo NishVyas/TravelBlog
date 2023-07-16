@@ -22,7 +22,8 @@ public class TravelblogappApplication {
 //            createTravelBlogger(travelBloggerDAO);
 //            createMultipleTravelBloggers(travelBloggerDAO);
 //            readTravelBlogger(travelBloggerDAO);
-            queryForTravelBloggers(travelBloggerDAO);
+//            queryForTravelBloggers(travelBloggerDAO);
+            queryForTravelBloggersByLastName(travelBloggerDAO);
         };
     }
 
@@ -69,6 +70,14 @@ public class TravelblogappApplication {
 
     private void queryForTravelBloggers(TravelBloggerDAO travelBloggerDAO) {
         List<TravelBlogger> travelBloggers = travelBloggerDAO.findAll();
+
+        for (TravelBlogger travelBlogger : travelBloggers) {
+            System.out.println(travelBlogger);
+        }
+    }
+
+    private void queryForTravelBloggersByLastName(TravelBloggerDAO travelBloggerDAO) {
+        List<TravelBlogger> travelBloggers = travelBloggerDAO.findByLastName("Prasad");
 
         for (TravelBlogger travelBlogger : travelBloggers) {
             System.out.println(travelBlogger);
