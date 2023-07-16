@@ -23,7 +23,8 @@ public class TravelblogappApplication {
 //            createMultipleTravelBloggers(travelBloggerDAO);
 //            readTravelBlogger(travelBloggerDAO);
 //            queryForTravelBloggers(travelBloggerDAO);
-            queryForTravelBloggersByLastName(travelBloggerDAO);
+//            queryForTravelBloggersByLastName(travelBloggerDAO);
+            updateTravelBlogger(travelBloggerDAO);
         };
     }
 
@@ -82,5 +83,18 @@ public class TravelblogappApplication {
         for (TravelBlogger travelBlogger : travelBloggers) {
             System.out.println(travelBlogger);
         }
+    }
+
+    private void updateTravelBlogger(TravelBloggerDAO travelBloggerDAO) {
+        int travelBloggerId = 20;
+        System.out.println("Getting Travel Blogger with ID: " + travelBloggerId);
+        TravelBlogger myTravelBlogger = travelBloggerDAO.findById(travelBloggerId);
+
+        System.out.println("Updating Travel Blogger...");
+        myTravelBlogger.setFirst_name("Scooby");
+
+        travelBloggerDAO.update(myTravelBlogger);
+
+        System.out.println("Updated Travel Blogger: " + myTravelBlogger);
     }
 }

@@ -42,4 +42,10 @@ public class TravelBloggerDAOImpl implements TravelBloggerDAO {
         travelBloggerQuery.setParameter("theData", last_name);
         return travelBloggerQuery.getResultList();
     }
+
+    @Override
+    @Transactional
+    public void update(TravelBlogger travelBlogger) {
+        entityManager.merge(travelBlogger);
+    }
 }
