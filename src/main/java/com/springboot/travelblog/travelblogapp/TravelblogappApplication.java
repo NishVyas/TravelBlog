@@ -7,6 +7,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
+import java.util.List;
+
 @SpringBootApplication
 public class TravelblogappApplication {
 
@@ -19,7 +21,8 @@ public class TravelblogappApplication {
         return runner -> {
 //            createTravelBlogger(travelBloggerDAO);
 //            createMultipleTravelBloggers(travelBloggerDAO);
-            readTravelBlogger(travelBloggerDAO);
+//            readTravelBlogger(travelBloggerDAO);
+            queryForTravelBloggers(travelBloggerDAO);
         };
     }
 
@@ -62,5 +65,13 @@ public class TravelblogappApplication {
         TravelBlogger myTravelBlogger = travelBloggerDAO.findById(travelBlogger.getId());
 
         System.out.println("Found the Travel Blogger: " + myTravelBlogger);
+    }
+
+    private void queryForTravelBloggers(TravelBloggerDAO travelBloggerDAO) {
+        List<TravelBlogger> travelBloggers = travelBloggerDAO.findAll();
+
+        for (TravelBlogger travelBlogger : travelBloggers) {
+            System.out.println(travelBlogger);
+        }
     }
 }
