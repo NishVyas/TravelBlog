@@ -17,8 +17,25 @@ public class TravelblogappApplication {
     @Bean
     public CommandLineRunner commandLineRunner(TravelBloggerDAO travelBloggerDAO) {
         return runner -> {
-            createTravelBlogger(travelBloggerDAO);
+//            createTravelBlogger(travelBloggerDAO);
+            createMultipleTravelBloggers(travelBloggerDAO);
         };
+    }
+
+    private void createMultipleTravelBloggers(TravelBloggerDAO travelBloggerDAO) {
+        System.out.println("Creating multiple Travel Bloggers...");
+        TravelBlogger travelBlogger = new TravelBlogger("Kid", "Rock", "kid.rock@gmail.com");
+        TravelBlogger travelBlogger2 = new TravelBlogger("John", "Doe", "john.doe@gmail.com");
+        TravelBlogger travelBlogger3 = new TravelBlogger("Elliot", "Anderson", "elliot.anderson@gmail.com");
+
+        System.out.println("Saving the Travel Bloggers...");
+        travelBloggerDAO.save(travelBlogger);
+        travelBloggerDAO.save(travelBlogger2);
+        travelBloggerDAO.save(travelBlogger3);
+
+        System.out.println("Saved Travel Blogger. Generated ID: " + travelBlogger.getId());
+        System.out.println("Saved Travel Blogger. Generated ID: " + travelBlogger2.getId());
+        System.out.println("Saved Travel Blogger. Generated ID: " + travelBlogger3.getId());
     }
 
     private void createTravelBlogger(TravelBloggerDAO travelBloggerDAO) {
