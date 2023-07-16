@@ -20,13 +20,13 @@ public class TravelblogappApplication {
     public CommandLineRunner commandLineRunner(TravelBloggerDAO travelBloggerDAO) {
         return runner -> {
 //            createTravelBlogger(travelBloggerDAO);
-//            createMultipleTravelBloggers(travelBloggerDAO);
+            createMultipleTravelBloggers(travelBloggerDAO);
 //            readTravelBlogger(travelBloggerDAO);
 //            queryForTravelBloggers(travelBloggerDAO);
 //            queryForTravelBloggersByLastName(travelBloggerDAO);
 //            updateTravelBlogger(travelBloggerDAO);
 //            deleteTravelBlogger(travelBloggerDAO);
-            deleteAllTravelBloggers(travelBloggerDAO);
+//            deleteAllTravelBloggers(travelBloggerDAO);
         };
     }
 
