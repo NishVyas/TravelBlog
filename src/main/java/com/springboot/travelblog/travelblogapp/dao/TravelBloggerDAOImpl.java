@@ -48,4 +48,18 @@ public class TravelBloggerDAOImpl implements TravelBloggerDAO {
     public void update(TravelBlogger travelBlogger) {
         entityManager.merge(travelBlogger);
     }
+
+    @Override
+    @Transactional
+    public void delete(Integer id) {
+        TravelBlogger travelBlogger = entityManager.find(TravelBlogger.class, id);
+        entityManager.remove(travelBlogger);
+    }
+
+    @Override
+    @Transactional
+    public int deleteAll() {
+        return entityManager.createQuery("DELETE FROM TravelBlogger").executeUpdate();
+    }
+
 }

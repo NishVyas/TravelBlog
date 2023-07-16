@@ -24,7 +24,9 @@ public class TravelblogappApplication {
 //            readTravelBlogger(travelBloggerDAO);
 //            queryForTravelBloggers(travelBloggerDAO);
 //            queryForTravelBloggersByLastName(travelBloggerDAO);
-            updateTravelBlogger(travelBloggerDAO);
+//            updateTravelBlogger(travelBloggerDAO);
+//            deleteTravelBlogger(travelBloggerDAO);
+            deleteAllTravelBloggers(travelBloggerDAO);
         };
     }
 
@@ -96,5 +98,17 @@ public class TravelblogappApplication {
         travelBloggerDAO.update(myTravelBlogger);
 
         System.out.println("Updated Travel Blogger: " + myTravelBlogger);
+    }
+
+    private void deleteTravelBlogger(TravelBloggerDAO travelBloggerDAO) {
+        int travelBloggerId = 19;
+        System.out.println("Deleting Travel Blogger ID: " + travelBloggerId);
+        travelBloggerDAO.delete(travelBloggerId);
+    }
+
+    private void deleteAllTravelBloggers(TravelBloggerDAO travelBloggerDAO) {
+        System.out.println("Deleting all Travel Bloggers.");
+        int numRowsDeleted = travelBloggerDAO.deleteAll();
+        System.out.println("Deleted row count: " + numRowsDeleted);
     }
 }
