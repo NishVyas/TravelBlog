@@ -20,4 +20,9 @@ public class TravelBloggerDAOImpl implements TravelBloggerDAO {
     public void save(TravelBlogger travelBlogger) {
         entityManager.persist(travelBlogger);
     }
+
+    @Override
+    public TravelBlogger findById(Integer id) {
+        return entityManager.find(TravelBlogger.class, id);
+    }
 }

@@ -6,4 +6,6 @@ public interface TravelBloggerDAO {
 
     void save(TravelBlogger travelBlogger);
 
+    TravelBlogger findById(Integer id);
+
 }
