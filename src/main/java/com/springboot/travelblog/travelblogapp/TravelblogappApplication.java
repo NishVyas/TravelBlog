@@ -20,7 +20,7 @@ public class TravelblogappApplication {
     public CommandLineRunner commandLineRunner(TravelBloggerDAO travelBloggerDAO) {
         return runner -> {
 //            createTravelBlogger(travelBloggerDAO);
-            createMultipleTravelBloggers(travelBloggerDAO);
+//            createMultipleTravelBloggers(travelBloggerDAO);
 //            readTravelBlogger(travelBloggerDAO);
 //            queryForTravelBloggers(travelBloggerDAO);
 //            queryForTravelBloggersByLastName(travelBloggerDAO);

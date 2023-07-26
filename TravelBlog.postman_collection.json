@@ -1,0 +1,86 @@
+{
+	"info": {
+		"_postman_id": "2339db90-eb13-4b28-bb93-f297bafc9a53",
+		"name": "TravelBlog",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3607412"
+	},
+	"item": [
+		{
+			"name": "TravelBloggers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/travelblog/api/travelBloggers",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"travelblog",
+						"api",
+						"travelBloggers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TravelBlogger {Id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/travelblog/api/travelBloggers/0",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"travelblog",
+						"api",
+						"travelBloggers",
+						"0"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "password",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "user",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
