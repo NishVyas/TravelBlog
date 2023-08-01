@@ -5,7 +5,6 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.TypedQuery;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -24,5 +23,22 @@ public class BlogDAOImpl implements BlogDAO {
         TypedQuery<Blog> blogQuery = entityManager.createQuery("FROM Blog ORDER BY title ASC", Blog.class);
 
         return blogQuery.getResultList();
+    }
+
+    @Override
+    public Blog findById(int theId) {
+        return entityManager.find(Blog.class, theId);
+    }
+
+    @Override
+    public Blog save(Blog theBlog) {
+        // If id == 0, then insert/save, else update
+        return entityManager.merge(theBlog);
+    }
+
+    @Override
+    public void deleteById(int theId) {
+        Blog theBlog = entityManager.find(Blog.class, theId);
+        entityManager.remove(theBlog);
     }
 }

@@ -1,10 +1,12 @@
-package com.springboot.travelblog.travelblogapp.dao;
+package com.springboot.travelblog.travelblogapp.service;
+
 
 import com.springboot.travelblog.travelblogapp.entity.Blog;
 
 import java.util.List;
 
-public interface BlogDAO {
+public interface BlogService {
+
     List<Blog> findAll();
 
     Blog findById(int theId);
