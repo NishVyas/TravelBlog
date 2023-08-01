@@ -46,6 +46,68 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "TravelBlogger {Wrong Id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/travelblog/api/travelBloggers/-1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"travelblog",
+						"api",
+						"travelBloggers",
+						"-1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TravelBlogger {Text}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/travelblog/api/travelBloggers/abcdefg",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"travelblog",
+						"api",
+						"travelBloggers",
+						"abcdefg"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Blog",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/travelblog/blog/blogs",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"travelblog",
+						"blog",
+						"blogs"
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"auth": {
