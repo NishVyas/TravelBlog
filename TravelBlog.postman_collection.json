@@ -462,6 +462,41 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "TravelBloggers (Authorized)",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "susan",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "test123",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/travelblog/api/travelBloggers",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"travelblog",
+						"api",
+						"travelBloggers"
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"event": [
