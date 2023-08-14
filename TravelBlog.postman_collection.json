@@ -7,496 +7,708 @@
 	},
 	"item": [
 		{
-			"name": "TravelBloggers",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/travelblog/api/travelBloggers",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"travelblog",
-						"api",
-						"travelBloggers"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "TravelBlogger {Id}",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/travelblog/api/travelBloggers/0",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"travelblog",
-						"api",
-						"travelBloggers",
-						"0"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "TravelBlogger {Wrong Id}",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/travelblog/api/travelBloggers/-1",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"travelblog",
-						"api",
-						"travelBloggers",
-						"-1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "TravelBlogger {Text}",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/travelblog/api/travelBloggers/abcdefg",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"travelblog",
-						"api",
-						"travelBloggers",
-						"abcdefg"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Blogs",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/travelblog/blogEntries/blogs",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"travelblog",
-						"blogEntries",
-						"blogs"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Blog {blogId}",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/travelblog/blogEntries/blog/1",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"travelblog",
-						"blogEntries",
-						"blog",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Blog",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"title\" : \"Test Title\",\r\n    \"description\" : \"Test Description\",\r\n    \"views\" : 77\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/travelblog/blogEntries/blog",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"travelblog",
-						"blogEntries",
-						"blog"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Blog",
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"id\": 3,\r\n    \"title\": \"Authentic Italy: (Updated Title Test)\",\r\n    \"description\": \"Delight your taste buds as we delve into Italy's culinary delights beyond the typical tourist fare, savoring regional specialties and secret recipes.\",\r\n    \"views\": 2456\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/travelblog/blogEntries/blog",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"travelblog",
-						"blogEntries",
-						"blog"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Blog",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/travelblog/blogEntries/blog/2",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"travelblog",
-						"blogEntries",
-						"blog",
-						"2"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Blogs (Spring Data REST)",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/travelblog/dataRest-api/weblogs",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"travelblog",
-						"dataRest-api",
-						"weblogs"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Blog (Spring Data REST)",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"title\" : \"Test Title\",\r\n    \"description\" : \"Test Description\",\r\n    \"views\" : 77\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/travelblog/dataRest-api/weblogs",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"travelblog",
-						"dataRest-api",
-						"weblogs"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Blog (Spring Data REST)",
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"title\": \"Authentic Italy: (Updated Title Test)\",\r\n    \"description\": \"Delight your taste buds as we delve into Italy's culinary delights beyond the typical tourist fare, savoring regional specialties and secret recipes.\",\r\n    \"views\": 2456\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/travelblog/dataRest-api/weblogs/3",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"travelblog",
-						"dataRest-api",
-						"weblogs",
-						"3"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Blog (Spring Data REST)",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/travelblog/dataRest-api/weblogs/2",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"travelblog",
-						"dataRest-api",
-						"weblogs",
-						"2"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Blog Sort by Title ASC (Spring Data REST)",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost:8080/travelblog/dataRest-api/weblogs?sort=title",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"travelblog",
-						"dataRest-api",
-						"weblogs"
-					],
-					"query": [
-						{
-							"key": "sort",
-							"value": "title"
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Blog Sort by Title DESC (Spring Data REST) Copy",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost:8080/travelblog/dataRest-api/weblogs?sort=title,desc",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"travelblog",
-						"dataRest-api",
-						"weblogs"
-					],
-					"query": [
-						{
-							"key": "sort",
-							"value": "title,desc"
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "TravelBloggers (Authorized)",
-			"request": {
-				"auth": {
-					"type": "basic",
-					"basic": [
-						{
-							"key": "username",
-							"value": "susan",
-							"type": "string"
+			"name": "TravelBlogger",
+			"item": [
+				{
+					"name": "TravelBloggers",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
 						},
-						{
-							"key": "password",
-							"value": "test123",
-							"type": "string"
+						"url": {
+							"raw": "localhost:8080/travelblog/api/travelBloggers",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"travelblog",
+								"api",
+								"travelBloggers"
+							]
 						}
-					]
+					},
+					"response": []
 				},
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost:8080/travelblog/api/travelBloggers",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"travelblog",
-						"api",
-						"travelBloggers"
-					]
+				{
+					"name": "TravelBlogger {Id}",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/travelblog/api/travelBloggers/0",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"travelblog",
+								"api",
+								"travelBloggers",
+								"0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TravelBlogger {Wrong Id}",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/travelblog/api/travelBloggers/-1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"travelblog",
+								"api",
+								"travelBloggers",
+								"-1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TravelBlogger {Text}",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/travelblog/api/travelBloggers/abcdefg",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"travelblog",
+								"api",
+								"travelBloggers",
+								"abcdefg"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
+		},
+		{
+			"name": "Blog",
+			"item": [
+				{
+					"name": "Blogs",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "test123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "nishant",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/travelblog/blogEntries/blogs",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"travelblog",
+								"blogEntries",
+								"blogs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Blog {blogId}",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/travelblog/blogEntries/blog/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"travelblog",
+								"blogEntries",
+								"blog",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Blog",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\" : \"Test Title\",\r\n    \"description\" : \"Test Description\",\r\n    \"views\" : 77\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/travelblog/blogEntries/blog",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"travelblog",
+								"blogEntries",
+								"blog"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Blog",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 3,\r\n    \"title\": \"Authentic Italy: (Updated Title Test)\",\r\n    \"description\": \"Delight your taste buds as we delve into Italy's culinary delights beyond the typical tourist fare, savoring regional specialties and secret recipes.\",\r\n    \"views\": 2456\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/travelblog/blogEntries/blog",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"travelblog",
+								"blogEntries",
+								"blog"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Blog",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/travelblog/blogEntries/blog/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"travelblog",
+								"blogEntries",
+								"blog",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Blogs (Spring Data REST)",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "test123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "nishant",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/travelblog/dataRest-api/weblogs?sort=title",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"travelblog",
+								"dataRest-api",
+								"weblogs"
+							],
+							"query": [
+								{
+									"key": "sort",
+									"value": "title"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Blog (Spring Data REST)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\" : \"Test Title\",\r\n    \"description\" : \"Test Description\",\r\n    \"views\" : 77\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/travelblog/dataRest-api/weblogs",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"travelblog",
+								"dataRest-api",
+								"weblogs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Blog (Spring Data REST)",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Authentic Italy: (Updated Title Test)\",\r\n    \"description\": \"Delight your taste buds as we delve into Italy's culinary delights beyond the typical tourist fare, savoring regional specialties and secret recipes.\",\r\n    \"views\": 2456\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/travelblog/dataRest-api/weblogs/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"travelblog",
+								"dataRest-api",
+								"weblogs",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Blog (Spring Data REST)",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/travelblog/dataRest-api/weblogs/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"travelblog",
+								"dataRest-api",
+								"weblogs",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Blog Sort by Title ASC (Spring Data REST)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/travelblog/dataRest-api/weblogs?sort=title",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"travelblog",
+								"dataRest-api",
+								"weblogs"
+							],
+							"query": [
+								{
+									"key": "sort",
+									"value": "title"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Blog Sort by Title DESC (Spring Data REST) Copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/travelblog/dataRest-api/weblogs?sort=title,desc",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"travelblog",
+								"dataRest-api",
+								"weblogs"
+							],
+							"query": [
+								{
+									"key": "sort",
+									"value": "title,desc"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TravelBlogger (Authorized)",
+			"item": [
+				{
+					"name": "TravelBloggers (Spring Data REST) (Authorized)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "john",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "test123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/travelblog/dataRest-api/travelBloggers",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"travelblog",
+								"dataRest-api",
+								"travelBloggers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TravelBloggers {id} (Spring Data REST) (Authorized)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "john",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "test123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/travelblog/dataRest-api/travelBloggers/8",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"travelblog",
+								"dataRest-api",
+								"travelBloggers",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TravelBloggers (Spring Data REST) (Authorized)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "mary",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "test123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"test123@gmail.com\",\r\n    \"first_name\": \"Tester\",\r\n    \"last_name\": \"Chester\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/travelblog/dataRest-api/travelBloggers",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"travelblog",
+								"dataRest-api",
+								"travelBloggers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TravelBloggers {id} (Spring Data REST) (Authorized)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "mary",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "test123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"test123Updated@gmail.com\",\r\n    \"first_name\": \"Tester\",\r\n    \"last_name\": \"UpdatedChester\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/travelblog/dataRest-api/travelBloggers/8",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"travelblog",
+								"dataRest-api",
+								"travelBloggers",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TravelBloggers {id} (Spring Data REST) (Authorized)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "susan",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "test123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/travelblog/dataRest-api/travelBloggers/8",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"travelblog",
+								"dataRest-api",
+								"travelBloggers",
+								"8"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	],
 	"event": [
