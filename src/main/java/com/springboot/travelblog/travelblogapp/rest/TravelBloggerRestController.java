@@ -14,27 +14,27 @@ import java.util.List;
 @RequestMapping("/api")
 public class TravelBloggerRestController {
 
-    private List<TravelBlogger> theTravelBloggers;
-
-    @PostConstruct
-    public void loadData() {
-        theTravelBloggers = new ArrayList<>();
-        theTravelBloggers.add(new TravelBlogger("Noleen", "Prasad", "noleenprasad@gmail.com"));
-        theTravelBloggers.add(new TravelBlogger("Nishant", "Vyas", "nishantvyas@gmail.com"));
-        theTravelBloggers.add(new TravelBlogger("Cosmo", "Kramer", "cosmokramer@gmail.com"));
-    }
-
-    @GetMapping("/travelBloggers")
-    public List<TravelBlogger> getTravelBloggers() {
-        return theTravelBloggers;
-    }
-
-    @GetMapping("/travelBloggers/{travelBloggerId}")
-    public TravelBlogger getTravelBlogById(@PathVariable int travelBloggerId) {
-        if (travelBloggerId >= theTravelBloggers.size() || travelBloggerId < 0) {
-            throw new TravelBloggerNotFoundException("Travel Blogger with id " + travelBloggerId + " not found.");
-        }
-
-        return theTravelBloggers.get(travelBloggerId);
-    }
+//    private List<TravelBlogger> theTravelBloggers;
+//
+//    @PostConstruct
+//    public void loadData() {
+//        theTravelBloggers = new ArrayList<>();
+//        theTravelBloggers.add(new TravelBlogger("Noleen", "Prasad", "noleenprasad@gmail.com"));
+//        theTravelBloggers.add(new TravelBlogger("Nishant", "Vyas", "nishantvyas@gmail.com"));
+//        theTravelBloggers.add(new TravelBlogger("Cosmo", "Kramer", "cosmokramer@gmail.com"));
+//    }
+//
+//    @GetMapping("/travelBloggers")
+//    public List<TravelBlogger> getTravelBloggers() {
+//        return theTravelBloggers;
+//    }
+//
+//    @GetMapping("/travelBloggers/{travelBloggerId}")
+//    public TravelBlogger getTravelBlogById(@PathVariable int travelBloggerId) {
+//        if (travelBloggerId >= theTravelBloggers.size() || travelBloggerId < 0) {
+//            throw new TravelBloggerNotFoundException("Travel Blogger with id " + travelBloggerId + " not found.");
+//        }
+//
+//        return theTravelBloggers.get(travelBloggerId);
+//    }
 }

@@ -9,17 +9,17 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class TravelBlogEntryController {
 
-    private TravelBlogEntry travelBlogEntry;
-
-    @Autowired
-    public TravelBlogEntryController(@Qualifier("itinerary") TravelBlogEntry travelBlogEntry) {
-        System.out.println("In constructor: " + getClass().getSimpleName());
-        this.travelBlogEntry = travelBlogEntry;
-    }
-
-    @GetMapping("/travelBlogEntry")
-    public String getLocationTravelGuide() {
-        return travelBlogEntry.getTravelBlogEntryType();
-    }
+//    private TravelBlogEntry travelBlogEntry;
+//
+//    @Autowired
+//    public TravelBlogEntryController(@Qualifier("itinerary") TravelBlogEntry travelBlogEntry) {
+//        System.out.println("In constructor: " + getClass().getSimpleName());
+//        this.travelBlogEntry = travelBlogEntry;
+//    }
+//
+//    @GetMapping("/travelBlogEntry")
+//    public String getLocationTravelGuide() {
+//        return travelBlogEntry.getTravelBlogEntryType();
+//    }
 
 }
