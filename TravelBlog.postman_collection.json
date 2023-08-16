@@ -519,13 +519,13 @@
 							"type": "basic",
 							"basic": [
 								{
-									"key": "username",
-									"value": "john",
+									"key": "password",
+									"value": "fun123",
 									"type": "string"
 								},
 								{
-									"key": "password",
-									"value": "test123",
+									"key": "username",
+									"value": "john",
 									"type": "string"
 								}
 							]
@@ -554,13 +554,13 @@
 							"type": "basic",
 							"basic": [
 								{
-									"key": "username",
-									"value": "john",
+									"key": "password",
+									"value": "fun123",
 									"type": "string"
 								},
 								{
-									"key": "password",
-									"value": "test123",
+									"key": "username",
+									"value": "john",
 									"type": "string"
 								}
 							]
@@ -568,7 +568,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/travelblog/dataRest-api/travelBloggers/8",
+							"raw": "localhost:8080/travelblog/dataRest-api/travelBloggers/11",
 							"host": [
 								"localhost"
 							],
@@ -577,7 +577,7 @@
 								"travelblog",
 								"dataRest-api",
 								"travelBloggers",
-								"8"
+								"11"
 							]
 						}
 					},
@@ -590,13 +590,13 @@
 							"type": "basic",
 							"basic": [
 								{
-									"key": "username",
-									"value": "mary",
+									"key": "password",
+									"value": "fun123",
 									"type": "string"
 								},
 								{
-									"key": "password",
-									"value": "test123",
+									"key": "username",
+									"value": "mary",
 									"type": "string"
 								}
 							]
@@ -634,13 +634,13 @@
 							"type": "basic",
 							"basic": [
 								{
-									"key": "username",
-									"value": "mary",
+									"key": "password",
+									"value": "fun123",
 									"type": "string"
 								},
 								{
-									"key": "password",
-									"value": "test123",
+									"key": "username",
+									"value": "mary",
 									"type": "string"
 								}
 							]
@@ -657,7 +657,7 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/travelblog/dataRest-api/travelBloggers/8",
+							"raw": "localhost:8080/travelblog/dataRest-api/travelBloggers/12",
 							"host": [
 								"localhost"
 							],
@@ -666,7 +666,7 @@
 								"travelblog",
 								"dataRest-api",
 								"travelBloggers",
-								"8"
+								"12"
 							]
 						}
 					},
@@ -679,13 +679,13 @@
 							"type": "basic",
 							"basic": [
 								{
-									"key": "username",
-									"value": "susan",
+									"key": "password",
+									"value": "fun123",
 									"type": "string"
 								},
 								{
-									"key": "password",
-									"value": "test123",
+									"key": "username",
+									"value": "susan",
 									"type": "string"
 								}
 							]
@@ -693,7 +693,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/travelblog/dataRest-api/travelBloggers/8",
+							"raw": "localhost:8080/travelblog/dataRest-api/travelBloggers/12",
 							"host": [
 								"localhost"
 							],
@@ -702,7 +702,7 @@
 								"travelblog",
 								"dataRest-api",
 								"travelBloggers",
-								"8"
+								"12"
 							]
 						}
 					},
